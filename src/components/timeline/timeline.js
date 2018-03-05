@@ -1,11 +1,8 @@
-define (
-	[
-		'react',
-		'create-react-class',
-		'./time-label',
-		'./timeline-item/timeline-item'
-	],
-	function (React, createReactClass, TimeLabel, TimelineItem) {
+import React from 'react'
+import createReactClass from 'create-react-class'
+import TimeLabel from './time-label'
+import TimelineItem from './timeline-item/timeline-item'
+
 		var Timeline = createReactClass({
 			render: function(){
 				var timelineInfo = [];
@@ -56,4 +53,4 @@ define (
 
 		return Timeline;
 	}
-)
+

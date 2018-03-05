@@ -1,9 +1,6 @@
-define (
-	[
-		'react',
-		'create-react-class',
-	],
-	function (React, createReactClass) {
+import React from 'react'
+import createReactClass from 'create-react-class'
+
 		var TimelineHeader = createReactClass({
 			render: function(){
 				return (
@@ -18,4 +15,4 @@ define (
 
 		return TimelineHeader
 	}
-)
+

@@ -1,10 +1,7 @@
-define(
-    [
-        'react',
-        'create-react-class',
-        'jquery',
-    ],
-    function (React, createReactClass, $) {
+import React from 'react'
+import createReactClass from 'create-react-class'
+import $ from 'jquery'
+
         var NavigationMenu = createReactClass({
             render: function () {
                 return (
@@ -182,4 +179,4 @@ define(
 
         return NavigationMenu
     }
-)
+

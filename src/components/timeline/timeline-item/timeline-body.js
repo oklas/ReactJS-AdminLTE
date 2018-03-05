@@ -1,9 +1,6 @@
-define (
-	[
-		'react',
-		'create-react-class',
-	],
-	function (React, createReactClass) {
+import React from 'react'
+import createReactClass from 'create-react-class'
+
 		var TimelineBody = createReactClass({
 			getDefaultProps: function() {
 			    return {
@@ -22,4 +19,4 @@ define (
 
 		return TimelineBody
 	}
-)
+

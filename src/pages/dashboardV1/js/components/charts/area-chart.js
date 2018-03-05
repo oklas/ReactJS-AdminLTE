@@ -1,12 +1,9 @@
-define(
-    [
-        'react',
-        'create-react-class',
-        'jquery',
-        'raphael',
-        'morris'
-    ],
-    function (React, createReactClass, $, Raphael, Morris){
+import React from 'react'
+import createReactClass from 'create-react-class'
+import $ from 'jquery'
+import Raphael from 'raphael'
+import Morris from 'morris'
+
     	var AreaChart = createReactClass({
             getDefaultProps: function() {
                 return {
@@ -49,4 +46,4 @@ define(
 
     	return AreaChart;
     }   
-)     
+

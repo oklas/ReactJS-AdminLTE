@@ -1,10 +1,7 @@
-define(
-    [
-        'react',
-        'create-react-class',
-        './message-item'
-    ],
-    function (React, createReactClass, MessageItem) {
+import React from 'react'
+import createReactClass from 'create-react-class'
+import MessageItem from './message-item'
+
         var HeaderMessages = createReactClass({
             getInitialState: function () {
                 return {
@@ -87,4 +84,4 @@ define(
 
         return HeaderMessages;
     }
-)
+

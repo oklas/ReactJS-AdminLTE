@@ -1,12 +1,8 @@
-define (
-	[
-		'react',
-		'create-react-class',
-		'jquery',
-		'./chat-message'
-	],
+import React from 'react'
+import createReactClass from 'create-react-class'
+import $ from 'jquery'
+import ChatMessage from './chat-message'
 
-	function (React, createReactClass, $, ChatMessage){
 		var Conversations = createReactClass({
 			getInitialState: function(){
 				return {
@@ -71,4 +67,4 @@ define (
 
 		return Conversations;
 	}
-)
+

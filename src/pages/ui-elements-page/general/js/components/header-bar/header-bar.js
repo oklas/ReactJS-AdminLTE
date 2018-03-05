@@ -1,13 +1,10 @@
-define(
-    [
-        'react',
-        'create-react-class',
-        'jquery',
-        './header-messages/header-messages',
-        './header-notifications/header-notifications',
-        './header-tasks/header-tasks'
-    ],
-    function (React, createReactClass, $, HeaderMessages, HeaderNotifications, HeaderTasks) {
+import React from 'react'
+import createReactClass from 'create-react-class'
+import $ from 'jquery'
+import HeaderMessages from './header-messages/header-messages'
+import HeaderNotifications from './header-notifications/header-notifications'
+import HeaderTasks from './header-tasks/header-tasks'
+
         var HeaderBar = createReactClass({
             pushMenu: function () {
                 var body = document.body;
@@ -102,4 +99,4 @@ define(
 
         return HeaderBar;
     }
-)
+

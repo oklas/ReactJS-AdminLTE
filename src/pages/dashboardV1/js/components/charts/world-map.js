@@ -1,12 +1,9 @@
-define(
-    [
-        'react',
-        'create-react-class',
-        'jquery',
-        'jvectormap',
-        'jvectormapWorld'
-    ],
-    function (React, createReactClass,$){
+import React from 'react'
+import createReactClass from 'create-react-class'
+import $ from 'jquery'
+import 'jvectormap'
+import 'jvectormapWorld'
+
     	var WorldMap = createReactClass({
             getDefaultProps: function() {
                 return {
@@ -55,4 +52,4 @@ define(
 
     	return WorldMap;
     }   
-)     
+

@@ -1,10 +1,7 @@
-define(
-    [
-        'exports',
-        'jquery',
-        'velocity-animate'
-    ],
-    function (exports, $, velocity) {
+import exports from 'exports'
+import $ from 'jquery'
+import velocity from 'velocity-animate'
+
 
         exports.toggleBoxCollapse = function(box, boxBody, icon) {
             if(box.className.indexOf('collapsed-box') !== -1) {
@@ -54,4 +51,4 @@ define(
             
         };
     }
-)
+

@@ -1,11 +1,8 @@
-define(
-    [
-        'react',
-        'create-react-class',
-        'react-dom',
-        './box-functions'
-    ],
-    function (React, createReactClass, ReactDOM, boxFunctions) {
+import React from 'react'
+import createReactClass from 'create-react-class'
+import ReactDOM from 'react-dom'
+import boxFunctions from './box-functions'
+
     	var BoxTool = createReactClass({
             toggleCollapse: function(event){
                 var box = boxFunctions.findClosestElement(event.currentTarget, 'box'),
@@ -41,4 +38,4 @@ define(
 
     	return BoxTool;
     }
-)
+

@@ -1,10 +1,7 @@
-define(
-    [
-        'react',
-        'create-react-class',
-        'jquery',
-    ],
-    function (React, createReactClass,$){
+import React from 'react'
+import createReactClass from 'create-react-class'
+import $ from 'jquery'
+
     	var ContainerThree = createReactClass({
     		render: function(){
                 var style = {
@@ -41,4 +38,4 @@ define(
 
     	return ContainerThree;
     }   
-)     
+

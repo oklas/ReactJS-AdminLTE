@@ -1,18 +1,15 @@
-define(
-    [
-        'react',
-        'create-react-class',
-        'react-dom',
-        'jquery',
-        './components/header-bar/header-bar',
-        './components/navigation-menu',
-        './components/color-palette-set',
-        './components/custom-box/box',
-        './components/alert',
-        './components/callout',
-        './components/custom-tabs/custom-tabs',
-    ],
-    function (React, createReactClass, ReactDOM, $, HeaderBar, NavigationMenu, ColorPaletteSet, Box, Alert, Callout, CustomTabs) {
+import React from 'react'
+import createReactClass from 'create-react-class'
+import ReactDOM from 'react-dom'
+import $ from 'jquery'
+import HeaderBar from './components/header-bar/header-bar'
+import NavigationMenu from './components/navigation-menu'
+import ColorPaletteSet from './components/color-palette-set'
+import Box from './components/custom-box/box'
+import Alert from './components/alert'
+import Callout from './components/callout'
+import CustomTabs from './components/custom-tabs/custom-tabs'
+
         var UIElements = createReactClass({
             getInitialState: function() {
                 return {
@@ -195,4 +192,4 @@ define(
 
         ReactDOM.render(<UIElements />,  document.getElementById('ui-container'));
     }
-)
+

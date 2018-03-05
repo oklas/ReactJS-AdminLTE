@@ -1,10 +1,7 @@
-define(
-    [
-        'react',
-        'create-react-class',
-        'react-dom',
-    ],
-    function (React, createReactClass, ReactDOM) {
+import React from 'react'
+import createReactClass from 'create-react-class'
+import ReactDOM from 'react-dom'
+
         var Box = createReactClass({
             getDefaultProps: function() {
                 return {
@@ -73,4 +70,4 @@ define(
 
         return Box;
     }
-)
+

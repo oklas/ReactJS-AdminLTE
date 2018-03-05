@@ -1,11 +1,8 @@
-define(
-    [
-        'react',
-        'create-react-class',
-        'react-dom',
-        '../../services/common-functions'
-    ],
-    function (React, createReactClass, ReactDOM, commonFunctions) {
+import React from 'react'
+import createReactClass from 'create-react-class'
+import ReactDOM from 'react-dom'
+import commonFunctions from '../../services/common-functions'
+
         var ChatBox = createReactClass({
             getDefaultProps: function() {
                 return {
@@ -107,4 +104,4 @@ define(
 
         return ChatBox;
     }
-)
+

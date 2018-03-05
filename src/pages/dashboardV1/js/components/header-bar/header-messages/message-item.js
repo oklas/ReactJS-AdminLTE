@@ -1,9 +1,6 @@
-define(
-    [
-        'react',
-        'create-react-class',
-    ],
-    function (React, createReactClass) {
+import React from 'react'
+import createReactClass from 'create-react-class'
+
         var MessageItem = createReactClass({
 
             render: function () {
@@ -28,4 +25,4 @@ define(
 
         return MessageItem;
     }
-)
+

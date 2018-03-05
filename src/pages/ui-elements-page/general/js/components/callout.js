@@ -1,9 +1,6 @@
-define(
-    [
-        'react',
-        'create-react-class',
-    ],
-    function (React, createReactClass) {
+import React from 'react'
+import createReactClass from 'create-react-class'
+
         var Callout = createReactClass({
         	render: function(){
         		return (
@@ -19,4 +16,4 @@ define(
 
         return Callout;
     }
-)
+

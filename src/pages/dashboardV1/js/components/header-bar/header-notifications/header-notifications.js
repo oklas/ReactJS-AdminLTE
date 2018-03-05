@@ -1,10 +1,7 @@
-define(
-    [
-        'react',
-        'create-react-class',
-        './notification-item'
-    ],
-    function (React, createReactClass, NotificationItem) {
+import React from 'react'
+import createReactClass from 'create-react-class'
+import NotificationItem from './notification-item'
+
         var HeaderNotifications = createReactClass({
             getInitialState: function () {
                 return {
@@ -75,4 +72,4 @@ define(
 
         return HeaderNotifications;
     }
-)
+

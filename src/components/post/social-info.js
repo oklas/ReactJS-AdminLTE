@@ -1,9 +1,6 @@
-define(
-    [
-        'react',
-        'create-react-class',
-    ],
-    function (React, createReactClass) {
+import React from 'react'
+import createReactClass from 'create-react-class'
+
         var SocialInfo = createReactClass({
             getDefaultProps: function() {
                 return {
@@ -34,4 +31,4 @@ define(
 
         return SocialInfo;
     }
-)
+

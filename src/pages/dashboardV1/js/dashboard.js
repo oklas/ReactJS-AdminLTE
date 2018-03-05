@@ -3,31 +3,28 @@
  * @Details App execution starts from here. One of the entry points to begin execution. Renders the main dashboard page.
  */
 
-define(
-    [
-        'react',
-        'create-react-class',
-        'react-dom',
-        'jquery',
-        'raphael',
-        'morris',
-        './components/header-bar/header-bar',
-        './components/navigation-menu',
-        './components/control-panel',
-        './components/charts/donut-chart',
-        './components/charts/area-chart',
-        './components/charts/world-map',
-        './components/containers/container-one',
-        './components/containers/container-two',
-        './components/containers/container-three',
-        './components/containers/container-four',
-        './components/containers/container-five',
-        './components/containers/container-six',
-        './components/containers/container-seven',
-        './components/controls-menu',
-        './components/stat-tile'
-    ],
-    function (React, createReactClass, ReactDOM, $, Raphael, Morris, HeaderBar, NavigationMenu, ControlPanel, DonutChart, AreaChart, WorldMap, ContainerOne, ContainerTwo, ContainerThree, ContainerFour,ContainerFive,ContainerSix,ContainerSeven,ControlsMenu,StatTile){
+import React from 'react'
+import createReactClass from 'create-react-class'
+import ReactDOM from 'react-dom'
+import $ from 'jquery'
+import Raphael from 'raphael'
+import Morris from 'morris'
+import HeaderBar from './components/header-bar/header-bar'
+import NavigationMenu from './components/navigation-menu'
+import ControlPanel from './components/control-panel'
+import DonutChart from './components/charts/donut-chart'
+import AreaChart from './components/charts/area-chart'
+import WorldMap from './components/charts/world-map'
+import ContainerOne from './components/containers/container-one'
+import ContainerTwo from './components/containers/container-two'
+import ContainerThree from './components/containers/container-three'
+import ContainerFour from './components/containers/container-four'
+import ContainerFive from './components/containers/container-five'
+import ContainerSix from './components/containers/container-six'
+import ContainerSeven from './components/containers/container-seven'
+import ControlsMenu from './components/controls-menu'
+import StatTile from './components/stat-tile'
+
     	var Dashboard = createReactClass({
             getInitialState: function() {
                 return {
@@ -192,4 +189,4 @@ define(
 
     	ReactDOM.render(<Dashboard />,  document.getElementById('dashboard-container'));
     }   
-)     
+

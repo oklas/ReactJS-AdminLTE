@@ -1,12 +1,9 @@
-define (
-	[
-		'react',
-		'create-react-class',
-		'./timeline-header',
-		'./timeline-body',
-		'./timeline-footer'
-	],
-	function (React, createReactClass, TimelineHeader, TimelineBody, TimelineFooter) {
+import React from 'react'
+import createReactClass from 'create-react-class'
+import TimelineHeader from './timeline-header'
+import TimelineBody from './timeline-body'
+import TimelineFooter from './timeline-footer'
+
 		var TimelineItem = createReactClass({
 			getDefaultProps: function() {
 			    return {
@@ -53,4 +50,4 @@ define (
 
 		return TimelineItem
 	}
-)
+

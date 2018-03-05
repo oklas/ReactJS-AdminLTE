@@ -1,13 +1,10 @@
-define(
-    [
-        'react',
-        'create-react-class',
-        'react-dom',
-        './comment',
-        './attachment',
-        '../../services/common-functions'
-    ],
-    function (React, createReactClass, ReactDOM, Comment, Attachment, commonFunctions) {
+import React from 'react'
+import createReactClass from 'create-react-class'
+import ReactDOM from 'react-dom'
+import Comment from './comment'
+import Attachment from './attachment'
+import commonFunctions from '../../services/common-functions'
+
         var Post = createReactClass({
             getDefaultProps: function() {
                 return {
@@ -115,4 +112,4 @@ define(
 
         return Post;
     }
-)
+

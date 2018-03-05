@@ -1,9 +1,6 @@
-define(
-    [
-        'react',
-        'create-react-class',
-    ],
-    function (React, createReactClass) {
+import React from 'react'
+import createReactClass from 'create-react-class'
+
         var ProfileInfoBlocks = createReactClass({
             render: function() {
                 var descriptionBlocks = this.props.list.map(function(info, iterator){
@@ -28,4 +25,4 @@ define(
 
         return ProfileInfoBlocks;
     }
-)
+

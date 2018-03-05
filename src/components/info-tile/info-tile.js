@@ -1,9 +1,6 @@
-define(
-    [
-        'react',
-        'create-react-class',
-    ],
-    function (React, createReactClass) {
+import React from 'react'
+import createReactClass from 'create-react-class'
+
         var InfoTile = createReactClass({
             getDefaultProps: function() {
                 return {
@@ -57,4 +54,4 @@ define(
 
         return InfoTile;
     }
-)
+

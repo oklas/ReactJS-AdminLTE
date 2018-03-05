@@ -1,10 +1,7 @@
-define(
-    [
-        'react',
-        'create-react-class',
-        './task-item'
-    ],
-    function (React, createReactClass, TaskItem) {
+import React from 'react'
+import createReactClass from 'create-react-class'
+import TaskItem from './task-item'
+
         var HeaderTasks = createReactClass({
             getInitialState: function () {
                 return {
@@ -87,4 +84,4 @@ define(
 
         return HeaderTasks;
     }
-)
+

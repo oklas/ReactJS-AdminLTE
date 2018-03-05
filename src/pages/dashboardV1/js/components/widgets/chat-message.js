@@ -1,11 +1,7 @@
-define (
-	[
-		'react',
-		'create-react-class',
-		'jquery'
-	],
+import React from 'react'
+import createReactClass from 'create-react-class'
+import $ from 'jquery'
 
-	function (React, createReactClass, $){
 		var ChatMessage = createReactClass({
 			render: function(){
 				var style2 = {
@@ -52,4 +48,4 @@ define (
 
 		return ChatMessage;
 	}
-)
+

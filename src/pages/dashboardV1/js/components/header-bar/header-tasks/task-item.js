@@ -1,9 +1,6 @@
-define(
-    [
-        'react',
-        'create-react-class',
-    ],
-    function (React, createReactClass) {
+import React from 'react'
+import createReactClass from 'create-react-class'
+
         var TaskItem = createReactClass({
 
             render: function(){
@@ -31,4 +28,4 @@ define(
 
         return TaskItem;
     }
-)
+

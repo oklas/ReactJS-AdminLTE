@@ -1,9 +1,6 @@
-define(
-    [
-        'react',
-        'create-react-class',
-    ],
-    function (React, createReactClass) {
+import React from 'react'
+import createReactClass from 'create-react-class'
+
         var StatTile = createReactClass({
             getDefaultProps: function() {
                 return {
@@ -56,4 +53,4 @@ define(
 
         return StatTile;
     }
-)
+

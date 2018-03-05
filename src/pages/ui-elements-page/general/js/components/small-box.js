@@ -1,11 +1,8 @@
-define(
-    [
-        'react',
-        'create-react-class',
-        'react-dom',
-        '../../common-functions'
-    ],
-    function (React, createReactClass, ReactDOM, commonFunctions) {
+import React from 'react'
+import createReactClass from 'create-react-class'
+import ReactDOM from 'react-dom'
+import commonFunctions from '../../common-functions'
+
         var SmallBox = createReactClass({
             getDefaultProps: function() {
                 return {
@@ -93,4 +90,4 @@ define(
 
         return SmallBox;
     }
-)
+

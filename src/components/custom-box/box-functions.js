@@ -1,10 +1,7 @@
-define(
-    [
-        'exports',
-        'jquery',
-        'velocity-animate'
-    ],
-    function (exports, $, velocity) {
+import exports from 'exports'
+import $ from 'jquery'
+import velocity from 'velocity-animate'
+
         //https://www.debuggex.com/r/Q-7k9g2R6hDLKE7J
         exports.findClosestElement = function(element, className){
             var regex = new RegExp("(^|\\s)"+className+"(\\s|$)", "gi")
@@ -71,4 +68,4 @@ define(
             
         };
     }
-)
+

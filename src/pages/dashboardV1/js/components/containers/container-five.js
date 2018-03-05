@@ -1,12 +1,8 @@
-define(
-    [
-        'react',
-        'create-react-class',
-        'jquery',
-        'velocity-animate'
+import React from 'react'
+import createReactClass from 'create-react-class'
+import $ from 'jquery'
+import 'velocity-animate'
 
-    ],
-    function (React, createReactClass,$){
     	var ContainerFive = createReactClass({
             toggleBoxCollapse: function(box, boxBody, icon) {
                 if(box.className.indexOf('collapsed-box') !== -1) {
@@ -94,4 +90,4 @@ define(
 
     	return ContainerFive;
     }   
-)     
+

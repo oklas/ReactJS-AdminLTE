@@ -1,12 +1,9 @@
-define(
-    [
-        'react',
-        'create-react-class',
-        'react-dom',
-        'jquery',
-        '../../../widgets.src'
-    ],
-    function (React, createReactClass, ReactDOM, $, reactjsAdminlte) {
+import React from 'react'
+import createReactClass from 'create-react-class'
+import ReactDOM from 'react-dom'
+import $ from 'jquery'
+import reactjsAdminlte from '../../../widgets.src'
+
         var HeaderBar = reactjsAdminlte.HeaderBar;
         var NavigationMenu = reactjsAdminlte.NavigationMenu;
         var Timeline = reactjsAdminlte.Timeline;
@@ -168,4 +165,4 @@ define(
 
         //commonFunctions.initialize().bootstrapTooltips("[data-toggle='tooltip']");
     }
-)
+
